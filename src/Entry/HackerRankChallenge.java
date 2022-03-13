@@ -7,7 +7,7 @@ public class HackerRankChallenge {
     {
 
 
-/*
+
         Scanner sc = new Scanner(System.in);
         int t=sc.nextInt();
 
@@ -21,6 +21,9 @@ public class HackerRankChallenge {
                 if(x>=-128 && x<=127)System.out.println("* byte");
                 //Complete the code
             }
+
+
+
             catch(Exception e)
             {
                 System.out.println(sc.next()+" can't be fitted anywhere.");
@@ -29,7 +32,7 @@ public class HackerRankChallenge {
         }
 
 
- */
+
 
     }
 }
