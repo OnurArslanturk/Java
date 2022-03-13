@@ -7,7 +7,7 @@ public class TaksimetreHesaplama {
         System.out.print("Toplam KM'yi giriniz: ");
         double km = kmIn.nextInt();
         km = (20<(km*2.20)) ? (km * 2.20) + 10 : 30;
-        System.out.println("Taksimetre ücreti : "+ km);
+        System.out.println("Taksimetre ücreti : "+ km+"TL");
 
 
     }
