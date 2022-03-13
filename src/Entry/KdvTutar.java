@@ -6,9 +6,7 @@ public class KdvTutar {
     {
         Scanner inp = new Scanner(System.in);
         System.out.print("Tutarı giriniz : ");
-        int tutar = inp.nextInt();
-        double kdvli = ((tutar >= 0) && (tutar <= 1000)) ? tutar * 1.18 : tutar * 1.08;
+        double tutar = inp.nextInt(), kdvli = ((tutar >= 0) && (tutar <= 1000)) ? tutar * 1.18 : tutar * 1.08;
         System.out.println(kdvli);
-
     }
 }
