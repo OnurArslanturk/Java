@@ -1,7 +1,7 @@
 package Entry;
 import javax.swing.*;
 import java.util.Scanner;
-
+// www.patika.dev
 public class Calculator {
     public static void main(String[] args) {
 
