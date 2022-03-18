@@ -1,25 +1,24 @@
 package Entry;
-
+import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Pattern;
 public class Operator {
-    public static void main(String args[]) {
+    public class ScannerDemo {
+        public static void main(String[] args) {
 
-        int[] numbers= new int[]{100,18,21,30};
+            String s = "Hello World! 3 + 3.0 = 6.0 true ";
 
-        //Outer loop checks if number is multiple of 2
-        OUTER:  //outer label
-        for(int i = 0; i<numbers.length; i++){
-            if(i % 2 == 0){
-                System.out.println("Odd number: " + i +
-                        ", continue from OUTER label");
-                continue OUTER;
-            }
+            // create a new scanner with the specified String Object
+            Scanner scanner = new Scanner(s);
 
-            INNER:
-            for(int j = 0; j<numbers.length; j++){
-                System.out.println("Even number: " + i +
-                        ", break  from INNER label");
-                break INNER;
-            }
+            // skip the word that matches the pattern ..llo
+            scanner.skip(Pattern.compile("..llo"));
+
+            // print a line of the scanner
+            System.out.println("" + scanner.nextLine());
+
+            // close the scanner
+            scanner.close();
         }
     }
 }
