@@ -4,7 +4,7 @@ public class UsHesaplama {
     public static void main(String[] args) {
         int sayi,us;
         Scanner input = new Scanner(System.in);
-        System.out.print("Üssü alınacak sayı : ");
+        System.out.print("Taban olacak sayı : ");
         sayi = input.nextInt();
         int sonuc =sayi;
         System.out.print("Üs olacak sayı : ");

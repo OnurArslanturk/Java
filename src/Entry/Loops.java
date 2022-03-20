@@ -5,20 +5,18 @@ import java.util.Scanner;
 public class Loops {
     public static void main(String[] args) {
 
-        int n;
         Scanner input = new Scanner(System.in);
-
-        System.out.print("Sınır Sayısını Giriniz : ");
-        n = input.nextInt();
-
-        for ( int i = 1 ; i<= n;i*=4) {
-            System.out.print(i + ",");
+        System.out.print("Sayı Giriniz: ");
+        int n = input.nextInt();
+        System.out.print("Üs Olacak Sayıyı Giriniz: ");
+        int k = input.nextInt();
+        int total = n;
+        for (int i = 0; i <= k; i++){
+            total *=n;
+            i++;
         }
-        System.out.println(" (4'ün Katları)  ");
+        System.out.println(n + " üssü " + k + " = " + total);
 
-        for ( int i = 1 ; i<= n;i*=5){
-            System.out.print(i + ",");
-        }
-        System.out.println(" (5 in Katları)  ");
+
     }
 }
