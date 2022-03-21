@@ -6,17 +6,24 @@ public class Loops {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Sayı Giriniz: ");
-        int n = input.nextInt();
-        System.out.print("Üs Olacak Sayıyı Giriniz: ");
-        int k = input.nextInt();
-        int total = n;
-        for (int i = 0; i <= k; i++){
-            total *=n;
-            i++;
-        }
-        System.out.println(n + " üssü " + k + " = " + total);
+        int n;
+        boolean askn = false;
+        double sum = 0;
 
+        do {
+            System.out.println("Please enter the number n: ");
+            n = input.nextInt();
+            if (n >= 0) {
+                askn = true;
+            }
+        }
+        while (!askn);
+
+        for (double i = 1; i <= n; i++) {
+            sum += (1 / i);
+        }
+
+        System.out.println(sum);
 
     }
 }
