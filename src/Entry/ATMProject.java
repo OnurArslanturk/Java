@@ -16,10 +16,10 @@ public class ATMProject {
             if (userName.equals("patika") && password.equals("dev123")) {
                 System.out.println("Merhaba, Kodluyoruz Bankasına Hoşgeldiniz!");
                 do {
-                    System.out.println("1-Para yatırma\n" +
-                            "2-Para Çekme\n" +
-                            "3-Bakiye Sorgula\n" +
-                            "4-Çıkış Yap");
+                    System.out.println("1 -Para yatırma\n" +
+                            "2 -Para Çekme\n" +
+                            "3 -Bakiye Sorgula\n" +
+                            "4 -Çıkış Yap");
                     System.out.print("Lütfen yapmak istediğiniz işlemi seçiniz : ");
                     select = input.nextInt();
 
