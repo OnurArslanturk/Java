@@ -41,3 +41,7 @@ public class DiamondWstars {
         }
     }
 }
+
+
+//https://app.patika.dev/onurarslanturk
+//www.patika.dev
