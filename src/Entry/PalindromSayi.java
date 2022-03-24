@@ -2,11 +2,9 @@ package Entry;
 import java.util.Scanner;
 public class PalindromSayi {
 
-
     static boolean palindrom(int n) {
         int temp = n, reverseN = 0, lastN;
         while( temp != 0){
-
             lastN = temp % 10;
             reverseN = (reverseN *10) + lastN;
             temp /= 10;
@@ -21,7 +19,6 @@ public class PalindromSayi {
         int n = in.nextInt();
         if (palindrom(n)) System.out.println(n + " Sayısı polindrom sayıdır.");
         else System.out.println( n + " Sayısı polindrom sayı değildir.");
-
     }
 }
 
