@@ -11,7 +11,7 @@ public class RecursivePatternCompliance {
         System.out.print(" "+number);
         PatternCreator(number-5);
         System.out.print(" "+number);
-        return;
+
     }
 
     public static void main(String[] args) {
